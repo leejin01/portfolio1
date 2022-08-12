@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브랜드영상</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .video{
+            width: 1320px;
+            height: 540px;
+            background: url(img/video_bg.jpg) no-repeat center;
+            margin: auto;
+            position: relative;
+            margin-top: 50px;
+        }
+        .video iframe{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20%;
+            border: #7f9db6 solid 5px;
+        }
+        #header{
+            height: 130px;
+            }
+            .header_inner{
+            position: relative;
+            width: 1320px;
+            margin: 30px auto;
+            }
+        .header_inner img{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 5px;
+            }
+        </style>
+</head>
+<body>
+
+    <div id="header">
+        <div class="header_inner">
+            <img src="img/logo.png" alt="로고이미지">
+        </div>
+    </div>
+    <div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PXJVelb-xlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</body>
+</html>
